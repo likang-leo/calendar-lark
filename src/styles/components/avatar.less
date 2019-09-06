@@ -1,0 +1,20 @@
+.m-avatar {
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+  .frame(@unit) {
+    width: @unit;
+    height: @unit;
+    line-height: @unit;
+  }
+  &.m-avatar--lg {
+    .frame(32px);
+  }
+  &.m-avatar--md {
+    .frame(28px);
+  }
+  &.m-avatar--sm {
+    .frame(24px);
+  }
+}

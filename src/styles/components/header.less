@@ -1,0 +1,32 @@
+.g-topbar {
+  @height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: @height;
+  padding: 0 20px;
+  background: #1890ff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  .menu-area {
+    flex: 1 0 auto;
+    .ant-menu {
+      line-height: @height;
+      color: hsla(0, 0%, 100%, 0.65);
+      background: transparent;
+      border-bottom: none;
+    }
+    .ant-menu-item {
+      top: 0;
+      padding: 0 20px 0 0;
+      border-bottom: none;
+      background: transparent;
+      font-size: 13px;
+    }
+  }
+  .avatar-area {
+    flex: 1 0 auto;
+    .m-avatar {
+      float: right;
+    }
+  }
+}
